@@ -1,5 +1,5 @@
-import { task } from "../task"
-export const TASKS:task[] = [
+import { Task } from "../task"
+export const TASKS:Task[] = [
     {
         id: 1 ,
         text: "terminar de estudiar angular",

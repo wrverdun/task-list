@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { task } from 'src/app/task';
+import { Task } from 'src/app/task';
 import { TASKS } from "../mock_tasks";
 
 @Component({
@@ -9,8 +9,7 @@ import { TASKS } from "../mock_tasks";
 })
 export class TasksItemComponent implements OnInit {
 
-  @Input() task: task | undefined;
-
+  @Input() task: Task=TASKS[0]
   constructor (){}
 
   ngOnInit(): void {
