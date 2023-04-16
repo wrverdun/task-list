@@ -4,6 +4,7 @@ import { TASKS } from '../mock_tasks';
 
 
 
+
 @Component({
   selector: 'app-tasks',
   templateUrl: './tasks.component.html',
@@ -12,7 +13,7 @@ import { TASKS } from '../mock_tasks';
 export class TasksComponent implements OnInit {
 
   tasks: Task[] = TASKS;
-
+  
   constructor(){}
 
   ngOnInit(): void {
